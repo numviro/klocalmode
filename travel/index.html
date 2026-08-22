@@ -1,327 +1,316 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-  <title>Korea Travel Guide | Seoul, Busan, Jeju & Local Tips</title>
+<title>Korea Travel Guide | Seoul, Busan, Jeju & Local Tips</title>
 
-  <meta name="description"
-        content="Plan your Korea trip with practical local guides to Seoul, Busan, Jeju, Incheon, Gyeongju and more. Neighborhoods, attractions, itineraries and real travel tips.">
+<meta name="description"
+content="Plan your Korea trip with practical local guides to Seoul, Busan, Jeju, Incheon, Gyeongju and more. Neighborhoods, attractions, itineraries and real travel tips.">
 
-  <meta name="robots" content="index, follow">
+<meta name="robots" content="index, follow">
 
-  <link rel="canonical" href="https://klocalmode.com/travel/">
+<link rel="canonical" href="https://klocalmode.com/travel/">
 
-  <meta property="og:title"
-        content="Korea Travel Guide | K Local Mode">
+<meta property="og:title"
+content="Korea Travel Guide | K Local Mode">
 
-  <meta property="og:description"
-        content="Practical Korea travel guides for Seoul, Busan, Jeju and beyond — with local tips, neighborhoods, attractions and itineraries.">
+<meta property="og:description"
+content="Practical Korea travel guides for Seoul, Busan, Jeju and beyond — with local tips, neighborhoods, attractions and itineraries.">
 
-  <meta property="og:url"
-        content="https://klocalmode.com/travel/">
+<meta property="og:url"
+content="https://klocalmode.com/travel/">
 
-  <meta property="og:type" content="website">
+<meta property="og:type" content="website">
 
-  <meta property="og:site_name" content="K Local Mode">
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
 
-  <style>
-    * {
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-    }
+body{
+font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#f8faf8;
+color:#18201d;
+line-height:1.65;
+}
 
-    html {
-      scroll-behavior: smooth;
-    }
+a{
+color:inherit;
+text-decoration:none;
+}
 
-    body {
-      font-family:
-        Inter,
-        -apple-system,
-        BlinkMacSystemFont,
-        "Segoe UI",
-        Roboto,
-        Helvetica,
-        Arial,
-        sans-serif;
+.container{
+width:min(1100px,calc(100% - 40px));
+margin:0 auto;
+}
 
-      background: #f8faf8;
-      color: #18201d;
-      line-height: 1.65;
-    }
+header{
+background:white;
+border-bottom:1px solid #e1e7e3;
+}
 
-    a {
-      color: inherit;
-      text-decoration: none;
-    }
+.nav{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
 
-    .container {
-      width: min(1100px, calc(100% - 40px));
-      margin: 0 auto;
-    }
+.logo{
+font-weight:900;
+font-size:1.25rem;
+letter-spacing:-.04em;
+}
 
-    header {
-      background: white;
-      border-bottom: 1px solid #e1e7e3;
-    }
+.logo span{
+color:#117a42;
+}
 
-    .nav {
-      min-height: 70px;
-      display: flex;
-      align-items: center;
-      justify-content: space-between;
-      gap: 24px;
-    }
+.home-link{
+font-size:.9rem;
+font-weight:700;
+color:#55615a;
+}
 
-    .logo {
-      font-weight: 900;
-      font-size: 1.25rem;
-      letter-spacing: -0.04em;
-    }
+.hero{
+padding:82px 0 68px;
+background:
+radial-gradient(circle at 85% 20%,rgba(19,166,83,.12),transparent 30%),
+radial-gradient(circle at 15% 85%,rgba(36,111,255,.06),transparent 28%),
+linear-gradient(180deg,#fff 0%,#f5faf6 100%);
+}
 
-    .logo span {
-      color: #117a42;
-    }
+.eyebrow{
+color:#117a42;
+font-size:.78rem;
+font-weight:900;
+letter-spacing:.12em;
+text-transform:uppercase;
+margin-bottom:12px;
+}
 
-    .home-link {
-      font-size: 0.9rem;
-      font-weight: 700;
-      color: #55615a;
-    }
+h1{
+max-width:900px;
+font-size:clamp(2.8rem,6vw,5.2rem);
+line-height:1.02;
+letter-spacing:-.06em;
+margin-bottom:22px;
+}
 
-    .hero {
-      padding: 82px 0 68px;
+.hero p{
+max-width:760px;
+color:#5e6b63;
+font-size:1.08rem;
+}
 
-      background:
-        radial-gradient(circle at 85% 20%, rgba(19,166,83,0.12), transparent 30%),
-        radial-gradient(circle at 15% 85%, rgba(36,111,255,0.06), transparent 28%),
-        linear-gradient(180deg, #ffffff 0%, #f5faf6 100%);
-    }
+section{
+padding:72px 0;
+}
 
-    .eyebrow {
-      color: #117a42;
-      font-size: 0.78rem;
-      font-weight: 900;
-      letter-spacing: 0.12em;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-    }
+h2{
+font-size:clamp(1.9rem,4vw,2.8rem);
+line-height:1.1;
+letter-spacing:-.045em;
+margin-bottom:12px;
+}
 
-    h1 {
-      max-width: 900px;
-      font-size: clamp(2.8rem, 6vw, 5.2rem);
-      line-height: 1.02;
-      letter-spacing: -0.06em;
-      margin-bottom: 22px;
-    }
+.section-copy{
+max-width:760px;
+color:#68736c;
+margin-bottom:32px;
+}
 
-    .hero p {
-      max-width: 760px;
-      color: #5e6b63;
-      font-size: 1.08rem;
-    }
+.city-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
 
-    section {
-      padding: 72px 0;
-    }
+.city-card{
+background:white;
+border:1px solid #dfe6e1;
+border-radius:19px;
+padding:26px;
+min-height:225px;
+display:flex;
+flex-direction:column;
+transition:.22s;
+}
 
-    h2 {
-      font-size: clamp(1.9rem, 4vw, 2.8rem);
-      line-height: 1.1;
-      letter-spacing: -0.045em;
-      margin-bottom: 12px;
-    }
+.city-card:hover{
+transform:translateY(-4px);
+border-color:#a8d3b7;
+box-shadow:0 16px 38px rgba(25,55,36,.08);
+}
 
-    .section-copy {
-      max-width: 760px;
-      color: #68736c;
-      margin-bottom: 32px;
-    }
+.city-icon{
+font-size:1.9rem;
+margin-bottom:22px;
+}
 
-    .city-grid {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 16px;
-    }
+.city-card h3{
+font-size:1.2rem;
+margin-bottom:8px;
+}
 
-    .city-card {
-      background: white;
-      border: 1px solid #dfe6e1;
-      border-radius: 19px;
-      padding: 26px;
-      min-height: 225px;
-      display: flex;
-      flex-direction: column;
-      transition: 0.22s;
-    }
+.city-card p{
+color:#68736c;
+font-size:.92rem;
+margin-bottom:20px;
+}
 
-    .city-card:hover {
-      transform: translateY(-4px);
-      border-color: #a8d3b7;
-      box-shadow: 0 16px 38px rgba(25,55,36,0.08);
-    }
+.status{
+margin-top:auto;
+color:#117a42;
+font-size:.8rem;
+font-weight:900;
+}
 
-    .city-icon {
-      font-size: 1.9rem;
-      margin-bottom: 22px;
-    }
+.start{
+background:#17221c;
+color:white;
+}
 
-    .city-card h3 {
-      font-size: 1.2rem;
-      margin-bottom: 8px;
-    }
+.start .eyebrow{
+color:#72d89a;
+}
 
-    .city-card p {
-      color: #68736c;
-      font-size: 0.92rem;
-      margin-bottom: 20px;
-    }
+.start .section-copy{
+color:#b7c2bb;
+}
 
-    .status {
-      margin-top: auto;
-      color: #117a42;
-      font-size: 0.8rem;
-      font-weight: 900;
-    }
+.priority-list{
+display:grid;
+gap:11px;
+}
 
-    .start {
-      background: #17221c;
-      color: white;
-    }
+.priority-item{
+display:block;
+background:rgba(255,255,255,.07);
+border:1px solid rgba(255,255,255,.11);
+border-radius:14px;
+padding:18px 20px;
+transition:.2s;
+}
 
-    .start .eyebrow {
-      color: #72d89a;
-    }
+a.priority-item:hover{
+background:rgba(255,255,255,.13);
+transform:translateX(4px);
+}
 
-    .start .section-copy {
-      color: #b7c2bb;
-    }
+.priority-item strong{
+display:block;
+margin-bottom:4px;
+color:#7ce0a3;
+}
 
-    .priority-list {
-      display: grid;
-      gap: 11px;
-    }
+.priority-item span{
+color:#acb9b1;
+font-size:.88rem;
+}
 
-    .priority-item {
-      display: block;
-      background: rgba(255,255,255,0.07);
-      border: 1px solid rgba(255,255,255,0.11);
-      border-radius: 14px;
-      padding: 18px 20px;
-    }
+.coming{
+display:inline-block;
+margin-top:9px;
+color:#72d89a;
+font-size:.73rem;
+font-weight:900;
+letter-spacing:.06em;
+}
 
-    .priority-item strong {
-      display: block;
-      margin-bottom: 4px;
-      color: white;
-    }
+.how-we-guide{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
 
-    .priority-item span {
-      color: #acb9b1;
-      font-size: 0.88rem;
-    }
+.guide-item{
+padding-right:16px;
+}
 
-    .coming {
-      display: inline-block;
-      margin-top: 9px;
-      color: #72d89a;
-      font-size: 0.73rem;
-      font-weight: 900;
-      letter-spacing: 0.06em;
-    }
+.guide-number{
+color:#117a42;
+font-size:.76rem;
+font-weight:900;
+margin-bottom:8px;
+}
 
-    .how-we-guide {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      gap: 25px;
-    }
+.guide-item h3{
+margin-bottom:7px;
+font-size:1.08rem;
+}
 
-    .guide-item {
-      padding-right: 16px;
-    }
+.guide-item p{
+color:#68736c;
+font-size:.91rem;
+}
 
-    .guide-number {
-      color: #117a42;
-      font-size: 0.76rem;
-      font-weight: 900;
-      margin-bottom: 8px;
-    }
+.local-note{
+background:#edf8f1;
+border:1px solid #d1e7d9;
+border-radius:18px;
+padding:29px;
+}
 
-    .guide-item h3 {
-      margin-bottom: 7px;
-      font-size: 1.08rem;
-    }
+.local-note strong{
+color:#117a42;
+}
 
-    .guide-item p {
-      color: #68736c;
-      font-size: 0.91rem;
-    }
+footer{
+padding:40px 0;
+background:white;
+border-top:1px solid #e1e7e3;
+color:#737f77;
+font-size:.85rem;
+}
 
-    .local-note {
-      background: #edf8f1;
-      border: 1px solid #d1e7d9;
-      border-radius: 18px;
-      padding: 29px;
-    }
+@media(max-width:850px){
 
-    .local-note strong {
-      color: #117a42;
-    }
+.city-grid,
+.how-we-guide{
+grid-template-columns:1fr 1fr;
+}
 
-    footer {
-      padding: 40px 0;
-      background: white;
-      border-top: 1px solid #e1e7e3;
-      color: #737f77;
-      font-size: 0.85rem;
-    }
+}
 
-    @media (max-width: 850px) {
-      .city-grid,
-      .how-we-guide {
-        grid-template-columns: 1fr 1fr;
-      }
-    }
+@media(max-width:650px){
 
-    @media (max-width: 650px) {
-      .container {
-        width: min(100% - 28px, 1100px);
-      }
+.container{
+width:min(100% - 28px,1100px);
+}
 
-      .hero {
-        padding: 60px 0 50px;
-      }
+.hero{
+padding:60px 0 50px;
+}
 
-      section {
-        padding: 56px 0;
-      }
+section{
+padding:56px 0;
+}
 
-      .city-grid,
-      .how-we-guide {
-        grid-template-columns: 1fr;
-      }
-    }
-  </style>
+.city-grid,
+.how-we-guide{
+grid-template-columns:1fr;
+}
+
+}
+</style>
 </head>
 
 <body>
 
 <header>
 
-  <div class="container nav">
+<div class="container nav">
 
-    <a href="/" class="logo">
-      <span>K</span> LOCAL MODE
-    </a>
+<a href="/" class="logo">
+<span>K</span> LOCAL MODE
+</a>
 
-    <a href="/" class="home-link">
-      ← Home
-    </a>
+<a href="/" class="home-link">
+← Home
+</a>
 
-  </div>
+</div>
 
 </header>
 
@@ -330,370 +319,382 @@
 
 <section class="hero">
 
-  <div class="container">
+<div class="container">
 
-    <div class="eyebrow">
-      TRAVEL KOREA
-    </div>
+<div class="eyebrow">
+TRAVEL KOREA
+</div>
 
-    <h1>
-      Korea Travel Guide
-    </h1>
+<h1>
+Korea Travel Guide
+</h1>
 
-    <p>
-      Explore Seoul, Busan, Jeju and beyond with practical local guides.
-      We focus on neighborhoods, attractions, routes and the small details
-      that make traveling in Korea easier once you're actually here.
-    </p>
+<p>
+Explore Seoul, Busan, Jeju and beyond with practical local guides.
+We focus on neighborhoods, attractions, routes
+and the small details that make traveling in Korea easier.
+</p>
 
-  </div>
+</div>
 
 </section>
 
 
 <section>
 
-  <div class="container">
+<div class="container">
 
-    <div class="eyebrow">
-      DESTINATIONS
-    </div>
+<div class="eyebrow">
+DESTINATIONS
+</div>
 
-    <h2>
-      Where are you going?
-    </h2>
+<h2>
+Where are you going?
+</h2>
 
-    <p class="section-copy">
-      We're starting with Seoul and expanding city by city across Korea.
-      Each destination will include practical travel information,
-      transportation, food, shopping and local tips.
-    </p>
-
-
-    <div class="city-grid">
-
-      <div class="city-card">
-
-        <div class="city-icon">🏙️</div>
-
-        <h3>Seoul</h3>
-
-        <p>
-          Myeongdong, Hongdae, Seongsu, Gangnam, Jongno,
-          Jamsil and more.
-        </p>
-
-        <span class="status">
-          FIRST GUIDES COMING NEXT →
-        </span>
-
-      </div>
+<p class="section-copy">
+We're starting with Seoul and expanding city by city across Korea.
+Each destination will include transportation,
+food, shopping, attractions and local travel tips.
+</p>
 
 
-      <div class="city-card">
-
-        <div class="city-icon">🌊</div>
-
-        <h3>Busan</h3>
-
-        <p>
-          Beaches, markets, neighborhoods,
-          food and transportation around Korea's second-largest city.
-        </p>
-
-        <span class="status">
-          COMING SOON
-        </span>
-
-      </div>
+<div class="city-grid">
 
 
-      <div class="city-card">
+<a href="/travel/where-to-stay-seoul/" class="city-card">
 
-        <div class="city-icon">🏝️</div>
+<div class="city-icon">🏙️</div>
 
-        <h3>Jeju</h3>
+<h3>Seoul</h3>
 
-        <p>
-          Jeju transportation, attractions,
-          food, nature and practical island travel.
-        </p>
+<p>
+Myeongdong, Hongdae, Seongsu, Gangnam,
+Jongno, Jamsil and more.
+</p>
 
-        <span class="status">
-          COMING SOON
-        </span>
+<span class="status">
+FIRST SEO GUIDE LIVE →
+</span>
 
-      </div>
-
-
-      <div class="city-card">
-
-        <div class="city-icon">✈️</div>
-
-        <h3>Incheon</h3>
-
-        <p>
-          More than the airport:
-          Songdo, Chinatown, islands and western Korea travel.
-        </p>
-
-        <span class="status">
-          COMING SOON
-        </span>
-
-      </div>
+</a>
 
 
-      <div class="city-card">
+<div class="city-card">
 
-        <div class="city-icon">🏯</div>
+<div class="city-icon">🌊</div>
 
-        <h3>Gyeongju</h3>
+<h3>Busan</h3>
 
-        <p>
-          Historic Korea, ancient sites,
-          cafés and practical transportation from Seoul or Busan.
-        </p>
+<p>
+Beaches, markets, neighborhoods,
+food and transportation around Korea's second-largest city.
+</p>
 
-        <span class="status">
-          COMING SOON
-        </span>
+<span class="status">
+COMING SOON
+</span>
 
-      </div>
+</div>
 
 
-      <div class="city-card">
+<div class="city-card">
 
-        <div class="city-icon">🇰🇷</div>
+<div class="city-icon">🏝️</div>
 
-        <h3>More Korea</h3>
+<h3>Jeju</h3>
 
-        <p>
-          Suwon, Jeonju, Gangneung,
-          Daegu and destinations beyond the usual tourist route.
-        </p>
+<p>
+Jeju transportation, attractions,
+food, nature and practical island travel.
+</p>
 
-        <span class="status">
-          EXPANDING LATER
-        </span>
+<span class="status">
+COMING SOON
+</span>
 
-      </div>
+</div>
 
-    </div>
 
-  </div>
+<div class="city-card">
+
+<div class="city-icon">✈️</div>
+
+<h3>Incheon</h3>
+
+<p>
+More than the airport:
+Songdo, Chinatown, islands and western Korea travel.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="city-card">
+
+<div class="city-icon">🏯</div>
+
+<h3>Gyeongju</h3>
+
+<p>
+Historic Korea, ancient sites,
+cafés and transportation from Seoul or Busan.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="city-card">
+
+<div class="city-icon">🇰🇷</div>
+
+<h3>More Korea</h3>
+
+<p>
+Suwon, Jeonju, Gangneung,
+Daegu and destinations beyond the usual tourist route.
+</p>
+
+<span class="status">
+EXPANDING LATER
+</span>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 <section class="start">
 
-  <div class="container">
+<div class="container">
 
-    <div class="eyebrow">
-      SEOUL FIRST
-    </div>
+<div class="eyebrow">
+SEOUL FIRST
+</div>
 
-    <h2>
-      Our first Seoul guides.
-    </h2>
+<h2>
+Our first Seoul guides.
+</h2>
 
-    <p class="section-copy">
-      We start with the questions first-time visitors are most likely
-      to search before choosing where to stay and what to do.
-    </p>
-
-
-    <div class="priority-list">
-
-      <div class="priority-item">
-
-        <strong>
-          1. Where to Stay in Seoul for First-Time Visitors
-        </strong>
-
-        <span>
-          Myeongdong, Hongdae, Gangnam, Jongno and other popular areas compared.
-        </span>
-
-        <div class="coming">
-          NEXT SEO GUIDE
-        </div>
-
-      </div>
+<p class="section-copy">
+Start with the neighborhood decision,
+then we'll build detailed local guides around each area.
+</p>
 
 
-      <div class="priority-item">
-
-        <strong>
-          2. Myeongdong Travel Guide
-        </strong>
-
-        <span>
-          Shopping, food, subway access, K-pop stores and practical local tips.
-        </span>
-
-        <div class="coming">
-          PLANNED
-        </div>
-
-      </div>
+<div class="priority-list">
 
 
-      <div class="priority-item">
+<a href="/travel/where-to-stay-seoul/"
+class="priority-item">
 
-        <strong>
-          3. Hongdae Travel Guide
-        </strong>
+<strong>
+1. Where to Stay in Seoul for First-Time Visitors →
+</strong>
 
-        <span>
-          Nightlife, cafés, shopping, performances and airport access.
-        </span>
+<span>
+Myeongdong, Hongdae, Jongno, Gangnam,
+Seoul Station and Jamsil compared.
+</span>
 
-        <div class="coming">
-          PLANNED
-        </div>
+<div class="coming">
+READ GUIDE
+</div>
 
-      </div>
-
-
-      <div class="priority-item">
-
-        <strong>
-          4. Gyeongbokgung Palace Guide
-        </strong>
-
-        <span>
-          Subway station, best exit, tickets, hanbok and nearby attractions.
-        </span>
-
-        <div class="coming">
-          PLANNED
-        </div>
-
-      </div>
+</a>
 
 
-      <div class="priority-item">
+<div class="priority-item">
 
-        <strong>
-          5. Seoul 3-Day Itinerary
-        </strong>
+<strong style="color:white;">
+2. Myeongdong Travel Guide
+</strong>
 
-        <span>
-          A realistic first-trip route without wasting half the day crossing Seoul.
-        </span>
+<span>
+Shopping, food, subway access,
+K-pop stores and practical local tips.
+</span>
 
-        <div class="coming">
-          PLANNED
-        </div>
+<div class="coming">
+NEXT
+</div>
 
-      </div>
+</div>
 
-    </div>
 
-  </div>
+<div class="priority-item">
+
+<strong style="color:white;">
+3. Hongdae Travel Guide
+</strong>
+
+<span>
+Nightlife, cafés, shopping,
+performances and airport access.
+</span>
+
+<div class="coming">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="priority-item">
+
+<strong style="color:white;">
+4. Gyeongbokgung Palace Guide
+</strong>
+
+<span>
+Subway station, best exit,
+tickets, hanbok and nearby attractions.
+</span>
+
+<div class="coming">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="priority-item">
+
+<strong style="color:white;">
+5. Seoul 3-Day Itinerary
+</strong>
+
+<span>
+A realistic route without wasting
+half the day crossing Seoul.
+</span>
+
+<div class="coming">
+PLANNED
+</div>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 <section>
 
-  <div class="container">
+<div class="container">
 
-    <div class="eyebrow">
-      LOCAL MODE
-    </div>
+<div class="eyebrow">
+LOCAL MODE
+</div>
 
-    <h2>
-      More than attraction lists.
-    </h2>
+<h2>
+More than attraction lists.
+</h2>
 
-    <p class="section-copy">
-      K Local Mode is built around the questions that become important
-      when you're actually traveling in Korea.
-    </p>
-
-
-    <div class="how-we-guide">
-
-      <div class="guide-item">
-
-        <div class="guide-number">
-          01
-        </div>
-
-        <h3>How to get there</h3>
-
-        <p>
-          Subway station, exit number,
-          walking route and transportation options.
-        </p>
-
-      </div>
+<p class="section-copy">
+K Local Mode is built around the questions
+that become important when you're actually traveling in Korea.
+</p>
 
 
-      <div class="guide-item">
-
-        <div class="guide-number">
-          02
-        </div>
-
-        <h3>What tourists should know</h3>
-
-        <p>
-          Tickets, reservations, payment,
-          luggage, queues and practical problems.
-        </p>
-
-      </div>
+<div class="how-we-guide">
 
 
-      <div class="guide-item">
+<div class="guide-item">
 
-        <div class="guide-number">
-          03
-        </div>
+<div class="guide-number">
+01
+</div>
 
-        <h3>Is it actually worth it?</h3>
+<h3>How to get there</h3>
 
-        <p>
-          We want to explain when a place is worth your time
-          rather than automatically recommending every tourist attraction.
-        </p>
+<p>
+Subway station, exit number,
+walking route and transportation options.
+</p>
 
-      </div>
+</div>
 
-    </div>
 
-  </div>
+<div class="guide-item">
+
+<div class="guide-number">
+02
+</div>
+
+<h3>What tourists should know</h3>
+
+<p>
+Tickets, reservations, payment,
+luggage, queues and practical problems.
+</p>
+
+</div>
+
+
+<div class="guide-item">
+
+<div class="guide-number">
+03
+</div>
+
+<h3>Is it actually worth it?</h3>
+
+<p>
+We explain when a place is worth your time
+instead of recommending every tourist attraction.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
 
 </section>
 
 
 <section>
 
-  <div class="container">
+<div class="container">
 
-    <div class="local-note">
+<div class="local-note">
 
-      <strong>Local Mode Principle</strong>
+<strong>Local Mode Principle</strong>
 
-      <br><br>
+<br><br>
 
-      We use Korean local sources and official information
-      to understand what's happening on the ground,
-      then rebuild that information for international travelers.
+We use Korean local sources and official information
+to understand what's happening on the ground,
+then rebuild that information for international travelers.
 
-      <br><br>
+<br><br>
 
-      The goal isn't to translate Korean travel blogs.
-      It's to turn current local information into practical,
-      original English travel guides.
+The goal isn't to translate Korean travel blogs.
+It's to turn current local information
+into practical, original English travel guides.
 
-    </div>
+</div>
 
-  </div>
+</div>
 
 </section>
 
@@ -702,9 +703,9 @@
 
 <footer>
 
-  <div class="container">
-    © 2026 K Local Mode · Travel Korea Like a Local
-  </div>
+<div class="container">
+© 2026 K Local Mode · Travel Korea Like a Local
+</div>
 
 </footer>
 
