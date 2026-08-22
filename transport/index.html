@@ -188,10 +188,18 @@
     }
 
     .priority-item {
+      display: block;
       background: rgba(255,255,255,0.07);
       border: 1px solid rgba(255,255,255,0.11);
       border-radius: 13px;
       padding: 17px 19px;
+      transition: 0.2s;
+    }
+
+    a.priority-item:hover {
+      background: rgba(255,255,255,0.13);
+      transform: translateX(4px);
+      border-color: rgba(255,255,255,0.22);
     }
 
     .priority-item strong {
@@ -202,6 +210,19 @@
     .priority-item span {
       color: #acb9b1;
       font-size: 0.87rem;
+    }
+
+    .live-guide strong {
+      color: #7ce0a3;
+    }
+
+    .live-label {
+      display: inline-block;
+      margin-top: 8px;
+      color: #7ce0a3;
+      font-size: 0.75rem;
+      font-weight: 900;
+      letter-spacing: 0.06em;
     }
 
     .local-note {
@@ -247,6 +268,7 @@
 
 <header>
   <div class="container nav">
+
     <a href="/" class="logo">
       <span>K</span> LOCAL MODE
     </a>
@@ -254,12 +276,15 @@
     <a href="/" class="home-link">
       ← Home
     </a>
+
   </div>
 </header>
+
 
 <main>
 
 <section class="hero">
+
   <div class="container">
 
     <div class="eyebrow">
@@ -277,10 +302,12 @@
     </p>
 
   </div>
+
 </section>
 
 
 <section>
+
   <div class="container">
 
     <div class="eyebrow">
@@ -299,92 +326,157 @@
     <div class="grid">
 
       <div class="card">
+
         <div class="icon">✈️</div>
+
         <h3>Incheon Airport</h3>
+
         <p>
           How to get from Incheon Airport to Seoul, Myeongdong,
           Hongdae, Gangnam and other popular areas.
         </p>
-        <span class="soon">Guides coming next →</span>
+
+        <span class="soon">
+          Guides available below ↓
+        </span>
+
       </div>
 
+
       <div class="card">
+
         <div class="icon">🚇</div>
+
         <h3>Seoul Subway</h3>
+
         <p>
           Tickets, station exits, transfers, subway etiquette
           and practical tips for first-time visitors.
         </p>
-        <span class="soon">Guide coming soon →</span>
+
+        <span class="soon">
+          Guide coming soon →
+        </span>
+
       </div>
 
+
       <div class="card">
+
         <div class="icon">💳</div>
+
         <h3>T-money & Transportation Cards</h3>
+
         <p>
           Where to buy a T-money card, how to recharge it,
           where it works and alternatives for tourists.
         </p>
-        <span class="soon">Guides coming soon →</span>
+
+        <span class="soon">
+          Guides coming soon →
+        </span>
+
       </div>
 
+
       <div class="card">
+
         <div class="icon">🚕</div>
+
         <h3>Taxi</h3>
+
         <p>
           How Korean taxis work, Kakao T, payment,
           airport taxis and what foreign visitors should know.
         </p>
-        <span class="soon">Guides coming soon →</span>
+
+        <span class="soon">
+          Guides coming soon →
+        </span>
+
       </div>
 
+
       <div class="card">
+
         <div class="icon">🚌</div>
+
         <h3>Bus</h3>
+
         <p>
           Seoul buses, airport buses, boarding,
           transfers and how to know when to get off.
         </p>
-        <span class="soon">Guides coming soon →</span>
+
+        <span class="soon">
+          Guides coming soon →
+        </span>
+
       </div>
 
+
       <div class="card">
+
         <div class="icon">🚄</div>
+
         <h3>KTX & Trains</h3>
+
         <p>
           Travel between Seoul, Busan, Gyeongju and other cities
           using Korea's train network.
         </p>
-        <span class="soon">Guides coming soon →</span>
+
+        <span class="soon">
+          Guides coming soon →
+        </span>
+
       </div>
 
+
       <div class="card">
+
         <div class="icon">🗺️</div>
+
         <h3>Navigation Apps</h3>
+
         <p>
           Naver Map, KakaoMap and the apps that are actually useful
           when traveling around Korea.
         </p>
-        <span class="soon">Guides coming soon →</span>
+
+        <span class="soon">
+          Guides coming soon →
+        </span>
+
       </div>
 
+
       <div class="card">
+
         <div class="icon">🌙</div>
+
         <h3>Late-Night Transportation</h3>
+
         <p>
           What to do after the subway stops running,
           including taxis, night buses and airport options.
         </p>
-        <span class="soon">Guides coming soon →</span>
+
+        <span class="soon">
+          Guides coming soon →
+        </span>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
 
 <section class="start">
+
   <div class="container">
 
     <div class="eyebrow">
@@ -402,59 +494,114 @@
 
     <div class="priority-list">
 
-      <div class="priority-item">
-        <strong>1. Incheon Airport to Seoul</strong>
-        <span>AREX, airport bus, taxi and which option makes sense.</span>
-      </div>
+      <a href="/transport/incheon-airport-to-seoul/"
+         class="priority-item live-guide">
+
+        <strong>
+          1. Incheon Airport to Seoul →
+        </strong>
+
+        <span>
+          AREX, airport bus, taxi and which option makes sense.
+        </span>
+
+        <div class="live-label">
+          READ GUIDE
+        </div>
+
+      </a>
+
 
       <div class="priority-item">
-        <strong>2. Incheon Airport to Myeongdong</strong>
-        <span>Compare transportation options for one of Seoul's most popular visitor areas.</span>
+
+        <strong>
+          2. Incheon Airport to Myeongdong
+        </strong>
+
+        <span>
+          Compare transportation options for one of Seoul's most
+          popular visitor areas.
+        </span>
+
       </div>
 
-      <div class="priority-item">
-        <strong>3. How to Use the Seoul Subway</strong>
-        <span>Stations, exits, transfers and getting around without confusion.</span>
-      </div>
 
       <div class="priority-item">
-        <strong>4. T-money Card Guide</strong>
-        <span>Buying, charging and using Korea's most useful transportation card.</span>
+
+        <strong>
+          3. How to Use the Seoul Subway
+        </strong>
+
+        <span>
+          Stations, exits, transfers and getting around without confusion.
+        </span>
+
       </div>
 
+
       <div class="priority-item">
-        <strong>5. Naver Map Guide for Foreigners</strong>
-        <span>Why it matters in Korea and how to use it for transportation.</span>
+
+        <strong>
+          4. T-money Card Guide
+        </strong>
+
+        <span>
+          Buying, charging and using Korea's most useful transportation card.
+        </span>
+
+      </div>
+
+
+      <div class="priority-item">
+
+        <strong>
+          5. Naver Map Guide for Foreigners
+        </strong>
+
+        <span>
+          Why it matters in Korea and how to use it for transportation.
+        </span>
+
       </div>
 
     </div>
 
   </div>
+
 </section>
 
 
 <section>
+
   <div class="container">
 
     <div class="local-note">
-      <strong>Local Mode Tip</strong><br><br>
+
+      <strong>Local Mode Tip</strong>
+
+      <br><br>
 
       Transportation in Korea is usually easy once you know
       which card, app, station and exit to use.
+
       K Local Mode focuses on those small details that can make
       a big difference when you're actually standing in Korea.
+
     </div>
 
   </div>
+
 </section>
 
 </main>
 
 
 <footer>
+
   <div class="container">
     © 2026 K Local Mode · Travel Korea Like a Local
   </div>
+
 </footer>
 
 </body>
