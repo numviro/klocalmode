@@ -2,25 +2,1098 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>K Local Mode | Travel Korea Like a Local</title>
 
   <meta name="description"
-        content="Discover Korea like a local. Practical Korea travel guides, transportation tips, food, K-culture, real Korean phrases and local insights.">
+        content="Travel Korea like a local. Practical guides to Korea travel, transportation, food, K-culture, Korean phrases, local trends and real help from someone in Korea.">
 
   <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://klocalmode.com/">
+
+  <meta property="og:title" content="K Local Mode | Travel Korea Like a Local">
+  <meta property="og:description"
+        content="Practical Korea travel guides, local transportation tips, food, K-culture, Korean phrases and real local insights.">
+  <meta property="og:url" content="https://klocalmode.com/">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="K Local Mode">
+
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="K Local Mode">
+  <meta name="twitter:description"
+        content="Travel Korea like a local. Real guides, local tips and practical help.">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "K Local Mode",
+    "url": "https://klocalmode.com/",
+    "description": "Practical Korea travel guides, transportation tips, food, K-culture, Korean phrases, trends and local insights."
+  }
+  </script>
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family:
+        Inter,
+        -apple-system,
+        BlinkMacSystemFont,
+        "Segoe UI",
+        Roboto,
+        Helvetica,
+        Arial,
+        sans-serif;
+
+      color: #18201d;
+      background: #f8faf8;
+      line-height: 1.6;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1160px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    /* HEADER */
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+
+      background: rgba(255,255,255,0.96);
+      backdrop-filter: blur(12px);
+
+      border-bottom: 1px solid #e4e9e5;
+    }
+
+    .nav {
+      min-height: 72px;
+
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+
+      gap: 28px;
+    }
+
+    .logo {
+      font-size: 1.3rem;
+      font-weight: 900;
+      letter-spacing: -0.04em;
+      white-space: nowrap;
+    }
+
+    .logo-k {
+      color: #117a42;
+    }
+
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+
+      font-size: 0.91rem;
+      font-weight: 700;
+    }
+
+    .nav-links a {
+      transition: 0.2s;
+    }
+
+    .nav-links a:hover {
+      color: #117a42;
+    }
+
+    .ask-button {
+      background: #17221c;
+      color: white;
+
+      padding: 10px 17px;
+      border-radius: 999px;
+    }
+
+    .ask-button:hover {
+      background: #117a42;
+      color: white !important;
+    }
+
+    /* HERO */
+
+    .hero {
+      padding: 100px 0 85px;
+
+      background:
+        radial-gradient(circle at 85% 20%, rgba(23,156,83,0.13), transparent 30%),
+        radial-gradient(circle at 10% 75%, rgba(0,111,255,0.07), transparent 28%),
+        linear-gradient(180deg, #ffffff 0%, #f5faf6 100%);
+    }
+
+    .hero-content {
+      max-width: 850px;
+    }
+
+    .mode-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+
+      padding: 8px 13px;
+
+      background: #e9f7ee;
+      color: #0c6c38;
+
+      border: 1px solid #c8ead5;
+      border-radius: 999px;
+
+      font-size: 0.82rem;
+      font-weight: 800;
+
+      margin-bottom: 24px;
+    }
+
+    .green-dot {
+      width: 9px;
+      height: 9px;
+      border-radius: 50%;
+      background: #13a653;
+      box-shadow: 0 0 0 5px rgba(19,166,83,0.12);
+    }
+
+    h1 {
+      font-size: clamp(3rem, 7vw, 6rem);
+      line-height: 0.98;
+      letter-spacing: -0.065em;
+      margin-bottom: 26px;
+    }
+
+    .hero-highlight {
+      color: #117a42;
+    }
+
+    .hero-description {
+      max-width: 720px;
+
+      font-size: clamp(1.05rem, 2vw, 1.25rem);
+
+      color: #53615a;
+      margin-bottom: 34px;
+    }
+
+    .hero-buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .primary-button,
+    .secondary-button {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-height: 49px;
+      padding: 0 21px;
+
+      border-radius: 12px;
+
+      font-size: 0.94rem;
+      font-weight: 800;
+
+      transition: 0.2s;
+    }
+
+    .primary-button {
+      background: #117a42;
+      color: white;
+    }
+
+    .primary-button:hover {
+      transform: translateY(-2px);
+      background: #0d6938;
+    }
+
+    .secondary-button {
+      background: white;
+      border: 1px solid #dce4de;
+    }
+
+    .secondary-button:hover {
+      border-color: #117a42;
+      color: #117a42;
+    }
+
+    /* MODE BAR */
+
+    .mode-bar {
+      margin-top: 58px;
+
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+
+      max-width: 580px;
+
+      background: white;
+
+      border: 1px solid #dfe7e1;
+      border-radius: 16px;
+
+      overflow: hidden;
+
+      box-shadow: 0 14px 40px rgba(23,45,32,0.07);
+    }
+
+    .mode-item {
+      padding: 18px 21px;
+
+      font-size: 0.86rem;
+      font-weight: 800;
+    }
+
+    .tourist-off {
+      color: #8b9690;
+      text-decoration: line-through;
+    }
+
+    .local-on {
+      color: #117a42;
+      background: #eef9f2;
+    }
+
+    /* SECTIONS */
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-label {
+      color: #117a42;
+
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+
+      text-transform: uppercase;
+
+      margin-bottom: 10px;
+    }
+
+    h2 {
+      font-size: clamp(2rem, 4vw, 3.15rem);
+      letter-spacing: -0.05em;
+      line-height: 1.08;
+
+      margin-bottom: 14px;
+    }
+
+    .section-description {
+      color: #657069;
+      max-width: 720px;
+      margin-bottom: 36px;
+    }
+
+    /* CATEGORY GRID */
+
+    .category-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 18px;
+    }
+
+    .category-card {
+      min-height: 245px;
+
+      padding: 28px;
+
+      background: white;
+
+      border: 1px solid #e0e6e2;
+      border-radius: 20px;
+
+      display: flex;
+      flex-direction: column;
+
+      transition: 0.25s;
+
+      box-shadow: 0 8px 25px rgba(21,50,32,0.035);
+    }
+
+    .category-card:hover {
+      transform: translateY(-5px);
+
+      border-color: #aad6ba;
+
+      box-shadow: 0 20px 45px rgba(21,50,32,0.09);
+    }
+
+    .category-icon {
+      font-size: 2rem;
+      margin-bottom: 25px;
+    }
+
+    .category-card h3 {
+      font-size: 1.22rem;
+      margin-bottom: 8px;
+    }
+
+    .category-card p {
+      color: #68736c;
+      font-size: 0.94rem;
+
+      margin-bottom: 22px;
+    }
+
+    .card-link {
+      color: #117a42;
+      font-weight: 800;
+
+      margin-top: auto;
+    }
+
+    /* START HERE */
+
+    .start-section {
+      background: #17221c;
+      color: white;
+    }
+
+    .start-section .section-label {
+      color: #74d99b;
+    }
+
+    .start-section .section-description {
+      color: #b9c5be;
+    }
+
+    .start-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 13px;
+    }
+
+    .start-card {
+      background: rgba(255,255,255,0.06);
+
+      border: 1px solid rgba(255,255,255,0.11);
+
+      border-radius: 15px;
+
+      padding: 19px 21px;
+
+      transition: 0.2s;
+    }
+
+    .start-card:hover {
+      background: rgba(255,255,255,0.11);
+      transform: translateX(3px);
+    }
+
+    .start-title {
+      font-weight: 800;
+      margin-bottom: 4px;
+    }
+
+    .start-description {
+      color: #aebbb3;
+      font-size: 0.88rem;
+    }
+
+    /* WHY LOCAL */
+
+    .why-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 28px;
+    }
+
+    .why-item {
+      padding-right: 15px;
+    }
+
+    .why-number {
+      font-size: 0.78rem;
+      font-weight: 900;
+      color: #117a42;
+
+      margin-bottom: 10px;
+    }
+
+    .why-item h3 {
+      margin-bottom: 8px;
+      font-size: 1.15rem;
+    }
+
+    .why-item p {
+      color: #68736c;
+      font-size: 0.93rem;
+    }
+
+    /* ASK LOCAL */
+
+    .ask-section {
+      padding-top: 20px;
+      padding-bottom: 100px;
+    }
+
+    .ask-box {
+      border-radius: 26px;
+
+      padding: 55px;
+
+      background:
+        linear-gradient(135deg, #eef9f2 0%, #f8fbf9 100%);
+
+      border: 1px solid #d6e8dc;
+
+      display: grid;
+      grid-template-columns: 1.5fr 0.8fr;
+
+      align-items: center;
+
+      gap: 40px;
+    }
+
+    .ask-box h2 {
+      margin-bottom: 14px;
+    }
+
+    .ask-box p {
+      color: #657069;
+      max-width: 650px;
+    }
+
+    .ask-actions {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+
+    .ask-actions a {
+      background: #17221c;
+      color: white;
+
+      padding: 14px 18px;
+
+      border-radius: 12px;
+
+      font-weight: 800;
+
+      text-align: center;
+    }
+
+    .ask-actions a:hover {
+      background: #117a42;
+    }
+
+    .ask-note {
+      margin-top: 14px;
+
+      font-size: 0.78rem;
+      color: #77837c;
+    }
+
+    /* FOOTER */
+
+    footer {
+      background: white;
+
+      border-top: 1px solid #e3e8e5;
+
+      padding: 45px 0;
+    }
+
+    .footer-content {
+      display: flex;
+      justify-content: space-between;
+
+      gap: 30px;
+
+      align-items: flex-start;
+    }
+
+    .footer-brand {
+      font-weight: 900;
+      font-size: 1.05rem;
+
+      margin-bottom: 7px;
+    }
+
+    .footer-text {
+      color: #7b867f;
+      font-size: 0.85rem;
+      max-width: 420px;
+    }
+
+    .footer-links {
+      display: flex;
+      flex-wrap: wrap;
+
+      gap: 17px;
+
+      color: #59645d;
+
+      font-size: 0.84rem;
+      font-weight: 700;
+    }
+
+    /* RESPONSIVE */
+
+    @media (max-width: 900px) {
+
+      .nav-links {
+        display: none;
+      }
+
+      .category-grid,
+      .why-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .ask-box {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    @media (max-width: 650px) {
+
+      .container {
+        width: min(100% - 28px, 1160px);
+      }
+
+      .hero {
+        padding: 72px 0 65px;
+      }
+
+      h1 {
+        font-size: 3.2rem;
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .category-grid,
+      .why-grid,
+      .start-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .mode-bar {
+        grid-template-columns: 1fr;
+      }
+
+      .ask-box {
+        padding: 32px 23px;
+      }
+
+      .footer-content {
+        flex-direction: column;
+      }
+    }
+  </style>
+
 </head>
 
 <body>
 
-  <h1>K LOCAL MODE</h1>
+<header>
 
-  <p>Travel Korea Like a Local.</p>
+  <div class="container nav">
 
-  <p>TOURIST MODE: OFF</p>
-  <p>LOCAL MODE: ON 🇰🇷</p>
+    <a href="/" class="logo">
+      <span class="logo-k">K</span> LOCAL MODE
+    </a>
+
+    <nav class="nav-links">
+
+      <a href="#travel">TRAVEL</a>
+      <a href="#transport">GET AROUND</a>
+      <a href="#eat">EAT & SHOP</a>
+      <a href="#culture">K-CULTURE</a>
+      <a href="#korean">SPEAK</a>
+      <a href="#trending">TRENDING</a>
+
+      <a href="#ask" class="ask-button">
+        ASK A LOCAL
+      </a>
+
+    </nav>
+
+  </div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+  <div class="container">
+
+    <div class="hero-content">
+
+      <div class="mode-badge">
+        <span class="green-dot"></span>
+        LOCAL MODE IS ON
+      </div>
+
+      <h1>
+        Korea.<br>
+        <span class="hero-highlight">Like you live here.</span>
+      </h1>
+
+      <p class="hero-description">
+        Practical Korea travel guides, real transportation help,
+        local food, K-culture, Korean phrases and what's actually
+        happening in Korea — explained from a local point of view.
+      </p>
+
+      <div class="hero-buttons">
+
+        <a href="#start" class="primary-button">
+          Start Your Korea Trip →
+        </a>
+
+        <a href="#ask" class="secondary-button">
+          Ask a Local
+        </a>
+
+      </div>
+
+      <div class="mode-bar">
+
+        <div class="mode-item tourist-off">
+          TOURIST MODE: OFF
+        </div>
+
+        <div class="mode-item local-on">
+          LOCAL MODE: ON 🇰🇷
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="travel">
+
+  <div class="container">
+
+    <div class="section-label">
+      EXPLORE KOREA
+    </div>
+
+    <h2>
+      Everything you actually need in Korea.
+    </h2>
+
+    <p class="section-description">
+      Not just a list of tourist attractions.
+      K Local Mode focuses on the practical details that make
+      traveling in Korea easier.
+    </p>
+
+    <div class="category-grid">
+
+      <a href="#start" class="category-card">
+
+        <div class="category-icon">📍</div>
+
+        <h3>Travel</h3>
+
+        <p>
+          Seoul, Busan, Jeju and beyond.
+          Neighborhood guides, attractions and practical local tips.
+        </p>
+
+        <span class="card-link">
+          Explore Korea →
+        </span>
+
+      </a>
+
+
+      <a href="#start" id="transport" class="category-card">
+
+        <div class="category-icon">🚇</div>
+
+        <h3>Get Around</h3>
+
+        <p>
+          Subway, bus, airport, taxi, KTX,
+          T-money and everything you need to move around Korea.
+        </p>
+
+        <span class="card-link">
+          Transportation guides →
+        </span>
+
+      </a>
+
+
+      <a href="#start" id="eat" class="category-card">
+
+        <div class="category-icon">🍜</div>
+
+        <h3>Eat & Shop</h3>
+
+        <p>
+          Korean food, restaurants, convenience stores,
+          shopping, beauty and local buying tips.
+        </p>
+
+        <span class="card-link">
+          Eat & shop like a local →
+        </span>
+
+      </a>
+
+
+      <a href="#start" id="culture" class="category-card">
+
+        <div class="category-icon">🎤</div>
+
+        <h3>K-Culture</h3>
+
+        <p>
+          K-pop stores, pop-ups, birthday cafés,
+          K-drama locations and cultural experiences.
+        </p>
+
+        <span class="card-link">
+          Explore K-culture →
+        </span>
+
+      </a>
+
+
+      <a href="#start" id="korean" class="category-card">
+
+        <div class="category-icon">💬</div>
+
+        <h3>Speak</h3>
+
+        <p>
+          Korean phrases people actually use,
+          travel Korean, slang, texting and cultural context.
+        </p>
+
+        <span class="card-link">
+          Speak real Korean →
+        </span>
+
+      </a>
+
+
+      <a href="#start" id="trending" class="category-card">
+
+        <div class="category-icon">🔥</div>
+
+        <h3>Trending Now</h3>
+
+        <p>
+          What's actually trending in Korea:
+          places, food, shopping, K-pop, slang and more.
+        </p>
+
+        <span class="card-link">
+          See what's hot →
+        </span>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="start" class="start-section">
+
+  <div class="container">
+
+    <div class="section-label">
+      FIRST TIME IN KOREA?
+    </div>
+
+    <h2>
+      Start here.
+    </h2>
+
+    <p class="section-description">
+      These are the guides most first-time visitors need
+      before and during a trip to Korea.
+    </p>
+
+    <div class="start-grid">
+
+      <div class="start-card">
+
+        <div class="start-title">
+          ✈️ Incheon Airport → Seoul
+        </div>
+
+        <div class="start-description">
+          AREX, airport bus, taxi and the easiest option for your trip.
+        </div>
+
+      </div>
+
+
+      <div class="start-card">
+
+        <div class="start-title">
+          🚇 How to Use the Seoul Subway
+        </div>
+
+        <div class="start-description">
+          A practical first-timer guide to stations, exits and transfers.
+        </div>
+
+      </div>
+
+
+      <div class="start-card">
+
+        <div class="start-title">
+          💳 T-money Card Guide
+        </div>
+
+        <div class="start-description">
+          Where to buy it, how to charge it and how tourists actually use it.
+        </div>
+
+      </div>
+
+
+      <div class="start-card">
+
+        <div class="start-title">
+          🗺️ Apps You Need in Korea
+        </div>
+
+        <div class="start-description">
+          Naver Map, Kakao T and the apps that make traveling easier.
+        </div>
+
+      </div>
+
+
+      <div class="start-card">
+
+        <div class="start-title">
+          🍽️ How to Order Food
+        </div>
+
+        <div class="start-description">
+          Useful Korean phrases and what actually happens at restaurants.
+        </div>
+
+      </div>
+
+
+      <div class="start-card">
+
+        <div class="start-title">
+          📍 Myeongdong First-Timer Guide
+        </div>
+
+        <div class="start-description">
+          Shopping, food, subway exits, K-pop stores and practical tips.
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section>
+
+  <div class="container">
+
+    <div class="section-label">
+      WHY K LOCAL MODE
+    </div>
+
+    <h2>
+      Less tourist fluff.<br>
+      More useful Korea.
+    </h2>
+
+    <p class="section-description">
+      We focus on the details travelers often have to figure out
+      after they arrive in Korea.
+    </p>
+
+    <div class="why-grid">
+
+      <div class="why-item">
+
+        <div class="why-number">
+          01
+        </div>
+
+        <h3>Local information</h3>
+
+        <p>
+          We look at Korean local sources and official information,
+          not just recycled international travel guides.
+        </p>
+
+      </div>
+
+
+      <div class="why-item">
+
+        <div class="why-number">
+          02
+        </div>
+
+        <h3>Practical answers</h3>
+
+        <p>
+          Which subway exit? Can you use a foreign card?
+          What should you say at a restaurant?
+          We focus on questions travelers actually have.
+        </p>
+
+      </div>
+
+
+      <div class="why-item">
+
+        <div class="why-number">
+          03
+        </div>
+
+        <h3>Real Korea now</h3>
+
+        <p>
+          Korea changes quickly.
+          We cover current trends, places, culture and the way Koreans
+          actually speak and travel.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section id="ask" class="ask-section">
+
+  <div class="container">
+
+    <div class="ask-box">
+
+      <div>
+
+        <div class="section-label">
+          ASK A LOCAL
+        </div>
+
+        <h2>
+          Stuck in Korea?
+        </h2>
+
+        <p>
+          Wrong subway exit? Can't understand a menu?
+          Not sure how to get somewhere?
+          K Local Mode is building a simple way for travelers
+          to ask a real person in Korea for practical help.
+        </p>
+
+        <div class="ask-note">
+          General travel help only.
+          For medical, police or emergency assistance,
+          contact the appropriate official service.
+        </div>
+
+      </div>
+
+      <div class="ask-actions">
+
+        <a href="#" aria-label="Telegram help coming soon">
+          Telegram — Coming Soon
+        </a>
+
+        <a href="#" aria-label="KakaoTalk help coming soon">
+          KakaoTalk — Coming Soon
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+  <div class="container footer-content">
+
+    <div>
+
+      <div class="footer-brand">
+        K LOCAL MODE
+      </div>
+
+      <div class="footer-text">
+        Travel Korea like a local.
+        Practical guides, culture, language and local insights.
+      </div>
+
+    </div>
+
+    <div class="footer-links">
+
+      <a href="/">Home</a>
+      <a href="#travel">Travel</a>
+      <a href="#transport">Transport</a>
+      <a href="#culture">K-Culture</a>
+      <a href="#korean">Korean</a>
+      <a href="#ask">Ask a Local</a>
+
+    </div>
+
+  </div>
+
+</footer>
 
 </body>
-  <!-- trigger pages build -->
 </html>
