@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>K-Culture Guide | K-pop, K-Drama & Korean Culture</title>
+
+<meta name="description"
+content="Explore K-culture in Korea with practical guides to K-pop stores, birthday cafes, pop-up stores, K-drama locations, fan experiences and Korean culture.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://klocalmode.com/k-culture/">
+
+<meta property="og:title"
+content="K-Culture Guide | K Local Mode">
+
+<meta property="og:description"
+content="Practical guides to K-pop, K-drama, pop-up stores, birthday cafes, fan experiences and Korean culture in Korea.">
+
+<meta property="og:url"
+content="https://klocalmode.com/k-culture/">
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="K Local Mode">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#f8faf8;
+color:#18201d;
+line-height:1.65;
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+.container{
+width:min(1100px,calc(100% - 40px));
+margin:0 auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e1e7e3;
+}
+
+.nav{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:25px;
+}
+
+.logo{
+font-weight:900;
+font-size:1.25rem;
+letter-spacing:-.04em;
+}
+
+.logo span{
+color:#117a42;
+}
+
+.home-link{
+font-size:.9rem;
+font-weight:700;
+color:#55615a;
+}
+
+.hero{
+padding:82px 0 68px;
+background:
+radial-gradient(circle at 85% 20%,rgba(126,87,194,.12),transparent 30%),
+radial-gradient(circle at 12% 85%,rgba(19,166,83,.07),transparent 28%),
+linear-gradient(180deg,#fff 0%,#f7f7fb 100%);
+}
+
+.eyebrow{
+color:#117a42;
+font-size:.78rem;
+font-weight:900;
+letter-spacing:.12em;
+text-transform:uppercase;
+margin-bottom:12px;
+}
+
+h1{
+max-width:900px;
+font-size:clamp(2.8rem,6vw,5.2rem);
+line-height:1.02;
+letter-spacing:-.06em;
+margin-bottom:22px;
+}
+
+.hero p{
+max-width:770px;
+color:#5e6b63;
+font-size:1.08rem;
+}
+
+section{
+padding:72px 0;
+}
+
+h2{
+font-size:clamp(1.9rem,4vw,2.8rem);
+line-height:1.1;
+letter-spacing:-.045em;
+margin-bottom:12px;
+}
+
+.section-copy{
+max-width:760px;
+color:#68736c;
+margin-bottom:32px;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.category-card{
+background:white;
+border:1px solid #dfe6e1;
+border-radius:19px;
+padding:26px;
+min-height:225px;
+display:flex;
+flex-direction:column;
+transition:.22s;
+}
+
+.category-card:hover{
+transform:translateY(-4px);
+border-color:#b9c9c0;
+box-shadow:0 16px 38px rgba(25,55,36,.08);
+}
+
+.icon{
+font-size:1.9rem;
+margin-bottom:22px;
+}
+
+.category-card h3{
+font-size:1.2rem;
+margin-bottom:8px;
+}
+
+.category-card p{
+color:#68736c;
+font-size:.92rem;
+margin-bottom:20px;
+}
+
+.status{
+margin-top:auto;
+color:#117a42;
+font-size:.8rem;
+font-weight:900;
+}
+
+.start{
+background:#17221c;
+color:white;
+}
+
+.start .eyebrow{
+color:#72d89a;
+}
+
+.start .section-copy{
+color:#b7c2bb;
+}
+
+.priority-list{
+display:grid;
+gap:11px;
+}
+
+.priority-item{
+background:rgba(255,255,255,.07);
+border:1px solid rgba(255,255,255,.11);
+border-radius:14px;
+padding:18px 20px;
+}
+
+.priority-item strong{
+display:block;
+margin-bottom:4px;
+color:white;
+}
+
+.priority-item span{
+color:#acb9b1;
+font-size:.88rem;
+}
+
+.next{
+display:inline-block;
+margin-top:9px;
+color:#72d89a;
+font-size:.73rem;
+font-weight:900;
+letter-spacing:.06em;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.why-number{
+color:#117a42;
+font-size:.76rem;
+font-weight:900;
+margin-bottom:8px;
+}
+
+.why-item h3{
+margin-bottom:7px;
+font-size:1.08rem;
+}
+
+.why-item p{
+color:#68736c;
+font-size:.91rem;
+}
+
+.local-note{
+background:#edf8f1;
+border:1px solid #d1e7d9;
+border-radius:18px;
+padding:29px;
+}
+
+.local-note strong{
+color:#117a42;
+}
+
+footer{
+padding:40px 0;
+background:white;
+border-top:1px solid #e1e7e3;
+color:#737f77;
+font-size:.85rem;
+}
+
+@media(max-width:850px){
+
+.category-grid,
+.why-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:650px){
+
+.container{
+width:min(100% - 28px,1100px);
+}
+
+.hero{
+padding:60px 0 50px;
+}
+
+section{
+padding:56px 0;
+}
+
+.category-grid,
+.why-grid{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<a href="/" class="logo">
+<span>K</span> LOCAL MODE
+</a>
+
+<a href="/" class="home-link">
+← Home
+</a>
+
+</div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">
+K-CULTURE IN KOREA
+</div>
+
+<h1>
+K-Culture Guide
+</h1>
+
+<p>
+K-pop, K-drama, fan culture, pop-up stores,
+birthday cafés and the experiences you can actually find
+while traveling in Korea.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="eyebrow">
+EXPLORE K-CULTURE
+</div>
+
+<h2>
+Experience it in Korea.
+</h2>
+
+<p class="section-copy">
+This section is not about celebrity profiles.
+We focus on how international visitors can experience
+K-culture while they're actually in Korea.
+</p>
+
+
+<div class="category-grid">
+
+
+<div class="category-card">
+
+<div class="icon">🎤</div>
+
+<h3>K-pop Places</h3>
+
+<p>
+Entertainment-company areas,
+fan destinations, music-related places
+and K-pop spots worth visiting.
+</p>
+
+<span class="status">
+FIRST GUIDES COMING NEXT →
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">💿</div>
+
+<h3>K-pop Shopping</h3>
+
+<p>
+Albums, lightsticks, photocards,
+official merchandise and where to shop in Korea.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">☕</div>
+
+<h3>Birthday Cafés</h3>
+
+<p>
+How idol birthday cafés work,
+where fans find them and what to expect when visiting.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">🔥</div>
+
+<h3>Pop-up Stores</h3>
+
+<p>
+Temporary K-pop and character pop-ups,
+reservations, queues and what's currently open.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">🎬</div>
+
+<h3>K-Drama</h3>
+
+<p>
+Filming locations, neighborhoods,
+cafés and places travelers recognize from Korean dramas.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">🎟️</div>
+
+<h3>K-Culture Experiences</h3>
+
+<p>
+Music shows, fan events,
+concert-related travel and cultural experiences.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="start">
+
+<div class="container">
+
+<div class="eyebrow">
+FIRST CONTENT CLUSTER
+</div>
+
+<h2>
+Our first K-Culture guides.
+</h2>
+
+<p class="section-copy">
+We'll begin with evergreen searches travelers use before a Korea trip,
+then connect them to current events and trends.
+</p>
+
+
+<div class="priority-list">
+
+
+<div class="priority-item">
+
+<strong>
+1. Best K-pop Stores in Seoul
+</strong>
+
+<span>
+Where to buy albums, merchandise,
+lightsticks and K-pop goods in Seoul.
+</span>
+
+<div class="next">
+NEXT SEO GUIDE
+</div>
+
+</div>
+
+
+<div class="priority-item">
+
+<strong>
+2. K-pop Stores in Myeongdong
+</strong>
+
+<span>
+A more specific shopping guide
+that connects directly to our Myeongdong travel page.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="priority-item">
+
+<strong>
+3. K-pop Birthday Cafés in Korea
+</strong>
+
+<span>
+What they are, how to find them
+and what international fans should know.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="priority-item">
+
+<strong>
+4. K-pop Pop-up Stores in Seoul
+</strong>
+
+<span>
+How pop-ups work, reservations,
+waiting systems and current-event considerations.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="priority-item">
+
+<strong>
+5. K-pop Places to Visit in Seoul
+</strong>
+
+<span>
+A broader fan-travel guide
+to neighborhoods and K-pop-related destinations.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="eyebrow">
+LOCAL MODE
+</div>
+
+<h2>
+Not just “10 K-pop places.”
+</h2>
+
+<p class="section-copy">
+K-culture changes quickly,
+so our guides need to explain what is permanent,
+what is temporary and what travelers should verify before visiting.
+</p>
+
+
+<div class="why-grid">
+
+
+<div class="why-item">
+
+<div class="why-number">
+01
+</div>
+
+<h3>Is it still open?</h3>
+
+<p>
+Pop-ups, cafés and fan events can disappear quickly.
+We'll make update dates clear.
+</p>
+
+</div>
+
+
+<div class="why-item">
+
+<div class="why-number">
+02
+</div>
+
+<h3>How do you actually visit?</h3>
+
+<p>
+Nearest station, exit,
+reservation requirements, queues and operating rules.
+</p>
+
+</div>
+
+
+<div class="why-item">
+
+<div class="why-number">
+03
+</div>
+
+<h3>Is it worth your time?</h3>
+
+<p>
+A famous K-pop name doesn't automatically mean
+there's something meaningful for visitors to see.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="local-note">
+
+<strong>K Local Mode K-Culture Rule</strong>
+
+<br><br>
+
+We won't build a generic idol database.
+
+<br><br>
+
+The focus is:
+
+<br><br>
+
+<strong>
+Where can fans actually go?<br>
+What can they buy?<br>
+How do reservations work?<br>
+Which station and exit should they use?<br>
+Is the event still running?<br>
+Does a visitor actually have access?
+</strong>
+
+<br><br>
+
+That keeps K-Culture connected to the main purpose of the site:
+helping people experience Korea in real life.
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+© 2026 K Local Mode · Travel Korea Like a Local
+</div>
+
+</footer>
+
+</body>
+</html>
