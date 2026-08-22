@@ -8,18 +8,20 @@
   <title>K Local Mode | Travel Korea Like a Local</title>
 
   <meta name="description"
-        content="Travel Korea like a local. Practical Korea travel guides, transportation tips, food, K-culture, real Korean phrases, local trends and real help from Korea.">
+        content="Travel Korea like a local. Practical Korea travel guides, transportation tips, Korean food, K-culture, real Korean phrases, trends and local insights.">
 
   <meta name="robots" content="index, follow">
 
   <link rel="canonical" href="https://klocalmode.com/">
 
-  <meta property="og:title" content="K Local Mode | Travel Korea Like a Local">
+  <meta property="og:title"
+        content="K Local Mode | Travel Korea Like a Local">
 
   <meta property="og:description"
-        content="Practical Korea travel guides, local transportation tips, food, K-culture, Korean phrases and real local insights.">
+        content="Practical Korea travel guides, transportation tips, food, K-culture, real Korean phrases and current local trends.">
 
-  <meta property="og:url" content="https://klocalmode.com/">
+  <meta property="og:url"
+        content="https://klocalmode.com/">
 
   <meta property="og:type" content="website">
 
@@ -27,10 +29,11 @@
 
   <meta name="twitter:card" content="summary">
 
-  <meta name="twitter:title" content="K Local Mode">
+  <meta name="twitter:title"
+        content="K Local Mode">
 
   <meta name="twitter:description"
-        content="Travel Korea like a local. Real guides, local tips and practical help.">
+        content="Travel Korea like a local with practical travel, food, K-culture, language and trend guides.">
 
   <script type="application/ld+json">
   {
@@ -38,7 +41,7 @@
     "@type": "WebSite",
     "name": "K Local Mode",
     "url": "https://klocalmode.com/",
-    "description": "Practical Korea travel guides, transportation tips, food, K-culture, Korean phrases, trends and local insights."
+    "description": "Practical Korea travel guides, transportation tips, Korean food, K-culture, Korean phrases, trends and local insights."
   }
   </script>
 
@@ -114,9 +117,9 @@
     .nav-links {
       display: flex;
       align-items: center;
-      gap: 24px;
+      gap: 22px;
 
-      font-size: 0.91rem;
+      font-size: 0.89rem;
       font-weight: 700;
     }
 
@@ -151,7 +154,7 @@
     }
 
     .hero-content {
-      max-width: 850px;
+      max-width: 860px;
     }
 
     .mode-badge {
@@ -193,7 +196,7 @@
     }
 
     .hero-description {
-      max-width: 720px;
+      max-width: 730px;
 
       font-size: clamp(1.05rem, 2vw, 1.25rem);
 
@@ -361,6 +364,7 @@
     .card-link {
       color: #117a42;
       font-weight: 800;
+
       margin-top: auto;
     }
 
@@ -384,6 +388,8 @@
     }
 
     .start-card {
+      display: block;
+
       background: rgba(255,255,255,0.06);
 
       border: 1px solid rgba(255,255,255,0.11);
@@ -410,6 +416,42 @@
       font-size: 0.88rem;
     }
 
+    .explore-strip {
+      background: #ffffff;
+      border-top: 1px solid #e3e8e5;
+      border-bottom: 1px solid #e3e8e5;
+    }
+
+    .explore-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 14px;
+    }
+
+    .explore-link {
+      padding: 20px;
+      background: #f7f9f7;
+      border: 1px solid #e1e6e3;
+      border-radius: 15px;
+      transition: 0.2s;
+    }
+
+    .explore-link:hover {
+      background: #eef8f2;
+      border-color: #b9d8c4;
+      transform: translateY(-2px);
+    }
+
+    .explore-link strong {
+      display: block;
+      margin-bottom: 4px;
+    }
+
+    .explore-link span {
+      color: #6b766f;
+      font-size: 0.86rem;
+    }
+
     .why-grid {
       display: grid;
       grid-template-columns: repeat(3, 1fr);
@@ -424,6 +466,7 @@
       font-size: 0.78rem;
       font-weight: 900;
       color: #117a42;
+
       margin-bottom: 10px;
     }
 
@@ -541,6 +584,13 @@
       font-weight: 700;
     }
 
+    @media (max-width: 1000px) {
+      .nav-links {
+        gap: 14px;
+        font-size: 0.82rem;
+      }
+    }
+
     @media (max-width: 900px) {
 
       .nav-links {
@@ -548,7 +598,8 @@
       }
 
       .category-grid,
-      .why-grid {
+      .why-grid,
+      .explore-grid {
         grid-template-columns: 1fr 1fr;
       }
 
@@ -577,7 +628,8 @@
 
       .category-grid,
       .why-grid,
-      .start-grid {
+      .start-grid,
+      .explore-grid {
         grid-template-columns: 1fr;
       }
 
@@ -597,7 +649,9 @@
 
 </head>
 
+
 <body>
+
 
 <header>
 
@@ -610,11 +664,26 @@
     <nav class="nav-links">
 
       <a href="/travel/">TRAVEL</a>
-      <a href="/transport/">GET AROUND</a>
-      <a href="#eat">EAT & SHOP</a>
-      <a href="#culture">K-CULTURE</a>
-      <a href="#korean">SPEAK</a>
-      <a href="#trending">TRENDING</a>
+
+      <a href="/transport/">
+        GET AROUND
+      </a>
+
+      <a href="/eat-shop/">
+        EAT & SHOP
+      </a>
+
+      <a href="/k-culture/">
+        K-CULTURE
+      </a>
+
+      <a href="/korean/">
+        SPEAK
+      </a>
+
+      <a href="/trending/">
+        TRENDING
+      </a>
 
       <a href="#ask" class="ask-button">
         ASK A LOCAL
@@ -629,6 +698,7 @@
 
 <main>
 
+
 <section class="hero">
 
   <div class="container">
@@ -636,41 +706,69 @@
     <div class="hero-content">
 
       <div class="mode-badge">
+
         <span class="green-dot"></span>
+
         LOCAL MODE IS ON
+
       </div>
 
+
       <h1>
+
         Korea.<br>
-        <span class="hero-highlight">Like you live here.</span>
+
+        <span class="hero-highlight">
+          Like you live here.
+        </span>
+
       </h1>
 
+
       <p class="hero-description">
-        Practical Korea travel guides, real transportation help,
-        local food, K-culture, Korean phrases and what's actually
-        happening in Korea — explained from a local point of view.
+
+        Practical Korea travel guides,
+        real transportation help,
+        food and shopping,
+        K-culture,
+        Korean phrases
+        and what's actually happening in Korea —
+        explained from a local point of view.
+
       </p>
+
 
       <div class="hero-buttons">
 
-        <a href="/travel/" class="primary-button">
+        <a href="/travel/"
+           class="primary-button">
+
           Explore Korea →
+
         </a>
 
-        <a href="#ask" class="secondary-button">
-          Ask a Local
+        <a href="#start"
+           class="secondary-button">
+
+          First Trip? Start Here
+
         </a>
 
       </div>
+
 
       <div class="mode-bar">
 
         <div class="mode-item tourist-off">
+
           TOURIST MODE: OFF
+
         </div>
 
         <div class="mode-item local-on">
+
           LOCAL MODE: ON 🇰🇷
+
         </div>
 
       </div>
@@ -682,7 +780,7 @@
 </section>
 
 
-<section id="travel">
+<section>
 
   <div class="container">
 
@@ -691,26 +789,39 @@
     </div>
 
     <h2>
-      Everything you actually need in Korea.
+      One site for the Korea you're actually visiting.
     </h2>
 
     <p class="section-description">
-      Not just a list of tourist attractions.
-      K Local Mode focuses on the practical details that make
-      traveling in Korea easier.
+
+      Travel planning is only one part of a Korea trip.
+      K Local Mode connects where to go,
+      how to get there,
+      what to eat,
+      what Korea is into right now
+      and what people actually say.
+
     </p>
+
 
     <div class="category-grid">
 
-      <a href="/travel/" class="category-card">
 
-        <div class="category-icon">📍</div>
+      <a href="/travel/"
+         class="category-card">
 
-        <h3>Travel</h3>
+        <div class="category-icon">
+          📍
+        </div>
+
+        <h3>
+          Travel
+        </h3>
 
         <p>
           Seoul, Busan, Jeju and beyond.
-          Neighborhood guides, attractions and practical local tips.
+          Neighborhood guides, attractions,
+          itineraries and local travel tips.
         </p>
 
         <span class="card-link">
@@ -720,15 +831,21 @@
       </a>
 
 
-      <a href="/transport/" id="transport" class="category-card">
+      <a href="/transport/"
+         class="category-card">
 
-        <div class="category-icon">🚇</div>
+        <div class="category-icon">
+          🚇
+        </div>
 
-        <h3>Get Around</h3>
+        <h3>
+          Get Around
+        </h3>
 
         <p>
-          Subway, bus, airport, taxi, KTX,
-          T-money and everything you need to move around Korea.
+          Airports, subway, T-money,
+          buses, taxis, trains
+          and the transportation details tourists need.
         </p>
 
         <span class="card-link">
@@ -738,76 +855,102 @@
       </a>
 
 
-      <div id="eat" class="category-card">
+      <a href="/eat-shop/"
+         class="category-card">
 
-        <div class="category-icon">🍜</div>
+        <div class="category-icon">
+          🍜
+        </div>
 
-        <h3>Eat & Shop</h3>
+        <h3>
+          Eat & Shop
+        </h3>
 
         <p>
-          Korean food, restaurants, convenience stores,
-          shopping, beauty and local buying tips.
+          Korean food, restaurants,
+          convenience stores,
+          shopping, K-beauty and markets.
         </p>
 
         <span class="card-link">
-          Coming soon
+          Eat & shop →
         </span>
 
-      </div>
+      </a>
 
 
-      <div id="culture" class="category-card">
+      <a href="/k-culture/"
+         class="category-card">
 
-        <div class="category-icon">🎤</div>
+        <div class="category-icon">
+          🎤
+        </div>
 
-        <h3>K-Culture</h3>
+        <h3>
+          K-Culture
+        </h3>
 
         <p>
-          K-pop stores, pop-ups, birthday cafés,
-          K-drama locations and cultural experiences.
+          K-pop stores,
+          birthday cafés,
+          pop-ups, K-drama locations
+          and fan experiences.
         </p>
 
         <span class="card-link">
-          Coming soon
+          Explore K-culture →
         </span>
 
-      </div>
+      </a>
 
 
-      <div id="korean" class="category-card">
+      <a href="/korean/"
+         class="category-card">
 
-        <div class="category-icon">💬</div>
+        <div class="category-icon">
+          💬
+        </div>
 
-        <h3>Speak</h3>
+        <h3>
+          Speak
+        </h3>
 
         <p>
           Korean phrases people actually use,
-          travel Korean, slang, texting and cultural context.
+          restaurant Korean,
+          slang, texting and cultural context.
         </p>
 
         <span class="card-link">
-          Coming soon
+          Speak real Korean →
         </span>
 
-      </div>
+      </a>
 
 
-      <div id="trending" class="category-card">
+      <a href="/trending/"
+         class="category-card">
 
-        <div class="category-icon">🔥</div>
+        <div class="category-icon">
+          🔥
+        </div>
 
-        <h3>Trending Now</h3>
+        <h3>
+          Trending Now
+        </h3>
 
         <p>
-          What's actually trending in Korea:
-          places, food, shopping, K-pop, slang and more.
+          What's actually hot in Korea:
+          places, food, shopping,
+          K-pop, pop-ups and slang.
         </p>
 
         <span class="card-link">
-          Coming soon
+          See what's trending →
         </span>
 
-      </div>
+      </a>
+
 
     </div>
 
@@ -816,7 +959,8 @@
 </section>
 
 
-<section id="start" class="start-section">
+<section id="start"
+         class="start-section">
 
   <div class="container">
 
@@ -829,88 +973,280 @@
     </h2>
 
     <p class="section-description">
-      These are the guides most first-time visitors need
-      before and during a trip to Korea.
+
+      These are some of the practical guides
+      already available on K Local Mode.
+
     </p>
+
 
     <div class="start-grid">
 
-      <a href="/transport/incheon-airport-to-seoul/" class="start-card">
+
+      <a href="/transport/incheon-airport-to-seoul/"
+         class="start-card">
 
         <div class="start-title">
+
           ✈️ Incheon Airport → Seoul
+
         </div>
 
         <div class="start-description">
-          AREX, airport bus, taxi and the easiest option for your trip.
+
+          AREX, airport bus and taxi compared.
+
         </div>
 
       </a>
 
 
-      <a href="/transport/seoul-subway-guide/" class="start-card">
+      <a href="/transport/incheon-airport-to-myeongdong/"
+         class="start-card">
 
         <div class="start-title">
+
+          🧳 Incheon Airport → Myeongdong
+
+        </div>
+
+        <div class="start-description">
+
+          Bus 6015, AREX, taxi
+          and what works best with luggage.
+
+        </div>
+
+      </a>
+
+
+      <a href="/transport/seoul-subway-guide/"
+         class="start-card">
+
+        <div class="start-title">
+
           🚇 How to Use the Seoul Subway
+
         </div>
 
         <div class="start-description">
-          A practical first-timer guide to stations, exits and transfers.
+
+          Fares, exits, transfers,
+          tickets and first-time tips.
+
         </div>
 
       </a>
 
 
-      <a href="/transport/tmoney-card-korea/" class="start-card">
+      <a href="/transport/tmoney-card-korea/"
+         class="start-card">
 
         <div class="start-title">
+
           💳 T-money Card Guide
+
         </div>
 
         <div class="start-description">
-          Where to buy it, how to charge it and how tourists actually use it.
+
+          Where to buy,
+          recharge and use it.
+
         </div>
 
       </a>
 
 
-      <a href="/travel/" class="start-card">
+      <a href="/travel/where-to-stay-seoul/"
+         class="start-card">
 
         <div class="start-title">
-          📍 Where to Stay in Seoul
+
+          🏨 Where to Stay in Seoul
+
         </div>
 
         <div class="start-description">
-          Our next guide will compare the best areas for a first trip.
+
+          Myeongdong, Hongdae,
+          Gangnam and other areas compared.
+
         </div>
 
       </a>
 
 
-      <div class="start-card">
+      <a href="/travel/myeongdong/"
+         class="start-card">
 
         <div class="start-title">
-          🍽️ How to Order Food
+
+          🛍️ Myeongdong Guide
+
         </div>
 
         <div class="start-description">
-          Useful Korean phrases and what actually happens at restaurants.
+
+          Shopping, food,
+          subway exits and practical local tips.
+
         </div>
 
-      </div>
+      </a>
 
 
-      <div class="start-card">
+      <a href="/travel/hongdae/"
+         class="start-card">
 
         <div class="start-title">
-          🎤 K-Culture in Korea
+
+          🎸 Hongdae Guide
+
         </div>
 
         <div class="start-description">
-          K-pop stores, pop-ups, events and experiences are coming soon.
+
+          Nightlife, cafés,
+          shopping and airport access.
+
         </div>
 
-      </div>
+      </a>
+
+
+      <a href="/trending/"
+         class="start-card">
+
+        <div class="start-title">
+
+          🔥 What's Trending in Korea
+
+        </div>
+
+        <div class="start-description">
+
+          Current places,
+          food, K-culture and Korean trends.
+
+        </div>
+
+      </a>
+
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="explore-strip">
+
+  <div class="container">
+
+    <div class="section-label">
+      PICK YOUR MODE
+    </div>
+
+    <h2>
+      What do you need right now?
+    </h2>
+
+    <p class="section-description">
+
+      Jump directly to the part of Korea
+      you're trying to figure out.
+
+    </p>
+
+
+    <div class="explore-grid">
+
+
+      <a href="/travel/"
+         class="explore-link">
+
+        <strong>
+          📍 I'm planning my trip
+        </strong>
+
+        <span>
+          Destinations, neighborhoods and itineraries.
+        </span>
+
+      </a>
+
+
+      <a href="/transport/"
+         class="explore-link">
+
+        <strong>
+          🚇 I need to get somewhere
+        </strong>
+
+        <span>
+          Airport, subway, cards and transportation.
+        </span>
+
+      </a>
+
+
+      <a href="/eat-shop/"
+         class="explore-link">
+
+        <strong>
+          🍜 I want to eat or shop
+        </strong>
+
+        <span>
+          Food, restaurants, convenience stores and K-beauty.
+        </span>
+
+      </a>
+
+
+      <a href="/k-culture/"
+         class="explore-link">
+
+        <strong>
+          🎤 I'm here for K-culture
+        </strong>
+
+        <span>
+          K-pop, K-drama, stores, cafés and pop-ups.
+        </span>
+
+      </a>
+
+
+      <a href="/korean/"
+         class="explore-link">
+
+        <strong>
+          💬 What does this Korean mean?
+        </strong>
+
+        <span>
+          Travel phrases, slang and real expressions.
+        </span>
+
+      </a>
+
+
+      <a href="/trending/"
+         class="explore-link">
+
+        <strong>
+          🔥 What's hot right now?
+        </strong>
+
+        <span>
+          Current places, products, food and trends.
+        </span>
+
+      </a>
+
 
     </div>
 
@@ -928,16 +1264,23 @@
     </div>
 
     <h2>
+
       Less tourist fluff.<br>
       More useful Korea.
+
     </h2>
 
+
     <p class="section-description">
-      We focus on the details travelers often have to figure out
-      after they arrive in Korea.
+
+      The small details matter
+      when you're actually standing in Korea.
+
     </p>
 
+
     <div class="why-grid">
+
 
       <div class="why-item">
 
@@ -945,11 +1288,17 @@
           01
         </div>
 
-        <h3>Local information</h3>
+        <h3>
+          Local information
+        </h3>
 
         <p>
-          We look at Korean local sources and official information,
-          not just recycled international travel guides.
+
+          We use Korean local sources
+          and official information
+          instead of relying only on recycled
+          international travel articles.
+
         </p>
 
       </div>
@@ -961,12 +1310,18 @@
           02
         </div>
 
-        <h3>Practical answers</h3>
+        <h3>
+          Practical answers
+        </h3>
 
         <p>
-          Which subway exit? Can you use a foreign card?
-          What should you say at a restaurant?
+
+          Which exit?
+          How do I pay?
+          What should I order?
+          Do I need a reservation?
           We focus on questions travelers actually have.
+
         </p>
 
       </div>
@@ -978,15 +1333,21 @@
           03
         </div>
 
-        <h3>Real Korea now</h3>
+        <h3>
+          Real Korea now
+        </h3>
 
         <p>
+
           Korea changes quickly.
-          We cover current trends, places, culture and the way Koreans
-          actually speak and travel.
+          Travel, K-culture,
+          slang, pop-ups and trends
+          need current local context.
+
         </p>
 
       </div>
+
 
     </div>
 
@@ -995,11 +1356,13 @@
 </section>
 
 
-<section id="ask" class="ask-section">
+<section id="ask"
+         class="ask-section">
 
   <div class="container">
 
     <div class="ask-box">
+
 
       <div>
 
@@ -1012,37 +1375,53 @@
         </h2>
 
         <p>
-          Wrong subway exit? Can't understand a menu?
+
+          Wrong subway exit?
+          Can't understand a menu?
           Not sure how to get somewhere?
-          K Local Mode is building a simple way for travelers
-          to ask a real person in Korea for practical help.
+
+          K Local Mode is building a simple way
+          for travelers to ask a real person in Korea
+          for practical travel help.
+
         </p>
 
         <div class="ask-note">
+
           General travel help only.
           For medical, police or emergency assistance,
-          contact the appropriate official service.
+          use the appropriate official service.
+
         </div>
 
       </div>
 
+
       <div class="ask-actions">
 
-        <a href="#" aria-label="Telegram help coming soon">
+        <a href="#"
+           aria-label="Telegram help coming soon">
+
           Telegram — Coming Soon
+
         </a>
 
-        <a href="#" aria-label="KakaoTalk help coming soon">
+        <a href="#"
+           aria-label="KakaoTalk help coming soon">
+
           KakaoTalk — Coming Soon
+
         </a>
 
       </div>
+
 
     </div>
 
   </div>
 
 </section>
+
 
 </main>
 
@@ -1058,26 +1437,57 @@
       </div>
 
       <div class="footer-text">
+
         Travel Korea like a local.
-        Practical guides, culture, language and local insights.
+        Practical guides,
+        culture, language
+        and local insights.
+
       </div>
 
     </div>
 
+
     <div class="footer-links">
 
-      <a href="/">Home</a>
-      <a href="/travel/">Travel</a>
-      <a href="/transport/">Transport</a>
-      <a href="#culture">K-Culture</a>
-      <a href="#korean">Korean</a>
-      <a href="#ask">Ask a Local</a>
+      <a href="/">
+        Home
+      </a>
+
+      <a href="/travel/">
+        Travel
+      </a>
+
+      <a href="/transport/">
+        Transport
+      </a>
+
+      <a href="/eat-shop/">
+        Eat & Shop
+      </a>
+
+      <a href="/k-culture/">
+        K-Culture
+      </a>
+
+      <a href="/korean/">
+        Korean
+      </a>
+
+      <a href="/trending/">
+        Trending
+      </a>
+
+      <a href="#ask">
+        Ask a Local
+      </a>
 
     </div>
 
   </div>
 
 </footer>
+
 
 </body>
 </html>
