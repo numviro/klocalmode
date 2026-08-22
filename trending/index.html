@@ -1,0 +1,715 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Trending in Korea | What's Hot Right Now</title>
+
+<meta name="description"
+content="See what's trending in Korea right now: hot places, viral food, K-pop events, pop-up stores, Korean slang, shopping trends and local buzz.">
+
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://klocalmode.com/trending/">
+
+<meta property="og:title"
+content="Trending in Korea | K Local Mode">
+
+<meta property="og:description"
+content="What's hot in Korea right now: viral places, food, K-pop, pop-up stores, slang and local trends.">
+
+<meta property="og:url"
+content="https://klocalmode.com/trending/">
+
+<meta property="og:type" content="website">
+
+<meta property="og:site_name" content="K Local Mode">
+
+<style>
+*{
+box-sizing:border-box;
+margin:0;
+padding:0;
+}
+
+body{
+font-family:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+background:#f8faf8;
+color:#18201d;
+line-height:1.65;
+}
+
+a{
+color:inherit;
+text-decoration:none;
+}
+
+.container{
+width:min(1100px,calc(100% - 40px));
+margin:0 auto;
+}
+
+header{
+background:white;
+border-bottom:1px solid #e1e7e3;
+}
+
+.nav{
+min-height:70px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+gap:25px;
+}
+
+.logo{
+font-weight:900;
+font-size:1.25rem;
+letter-spacing:-.04em;
+}
+
+.logo span{
+color:#117a42;
+}
+
+.home-link{
+font-size:.9rem;
+font-weight:700;
+color:#55615a;
+}
+
+.hero{
+padding:82px 0 68px;
+background:
+radial-gradient(circle at 84% 18%,rgba(255,90,70,.10),transparent 30%),
+radial-gradient(circle at 15% 85%,rgba(19,166,83,.08),transparent 28%),
+linear-gradient(180deg,#fff 0%,#faf7f6 100%);
+}
+
+.eyebrow{
+color:#117a42;
+font-size:.78rem;
+font-weight:900;
+letter-spacing:.12em;
+text-transform:uppercase;
+margin-bottom:12px;
+}
+
+h1{
+max-width:900px;
+font-size:clamp(2.8rem,6vw,5.2rem);
+line-height:1.02;
+letter-spacing:-.06em;
+margin-bottom:22px;
+}
+
+.hero p{
+max-width:770px;
+color:#5e6b63;
+font-size:1.08rem;
+}
+
+section{
+padding:72px 0;
+}
+
+h2{
+font-size:clamp(1.9rem,4vw,2.8rem);
+line-height:1.1;
+letter-spacing:-.045em;
+margin-bottom:12px;
+}
+
+.section-copy{
+max-width:760px;
+color:#68736c;
+margin-bottom:32px;
+}
+
+.category-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:16px;
+}
+
+.category-card{
+background:white;
+border:1px solid #dfe6e1;
+border-radius:19px;
+padding:26px;
+min-height:225px;
+display:flex;
+flex-direction:column;
+transition:.22s;
+}
+
+.category-card:hover{
+transform:translateY(-4px);
+border-color:#a8d3b7;
+box-shadow:0 16px 38px rgba(25,55,36,.08);
+}
+
+.icon{
+font-size:1.9rem;
+margin-bottom:22px;
+}
+
+.category-card h3{
+font-size:1.2rem;
+margin-bottom:8px;
+}
+
+.category-card p{
+color:#68736c;
+font-size:.92rem;
+margin-bottom:20px;
+}
+
+.status{
+margin-top:auto;
+color:#117a42;
+font-size:.8rem;
+font-weight:900;
+}
+
+.now{
+background:#17221c;
+color:white;
+}
+
+.now .eyebrow{
+color:#72d89a;
+}
+
+.now .section-copy{
+color:#b7c2bb;
+}
+
+.trend-list{
+display:grid;
+gap:11px;
+}
+
+.trend-item{
+background:rgba(255,255,255,.07);
+border:1px solid rgba(255,255,255,.11);
+border-radius:14px;
+padding:18px 20px;
+}
+
+.trend-item strong{
+display:block;
+margin-bottom:4px;
+color:white;
+}
+
+.trend-item span{
+color:#acb9b1;
+font-size:.88rem;
+}
+
+.next{
+display:inline-block;
+margin-top:9px;
+color:#72d89a;
+font-size:.73rem;
+font-weight:900;
+letter-spacing:.06em;
+}
+
+.why-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:25px;
+}
+
+.why-number{
+color:#117a42;
+font-size:.76rem;
+font-weight:900;
+margin-bottom:8px;
+}
+
+.why-item h3{
+margin-bottom:7px;
+font-size:1.08rem;
+}
+
+.why-item p{
+color:#68736c;
+font-size:.91rem;
+}
+
+.local-note{
+background:#edf8f1;
+border:1px solid #d1e7d9;
+border-radius:18px;
+padding:29px;
+}
+
+.local-note strong{
+color:#117a42;
+}
+
+footer{
+padding:40px 0;
+background:white;
+border-top:1px solid #e1e7e3;
+color:#737f77;
+font-size:.85rem;
+}
+
+@media(max-width:850px){
+
+.category-grid,
+.why-grid{
+grid-template-columns:1fr 1fr;
+}
+
+}
+
+@media(max-width:650px){
+
+.container{
+width:min(100% - 28px,1100px);
+}
+
+.hero{
+padding:60px 0 50px;
+}
+
+section{
+padding:56px 0;
+}
+
+.category-grid,
+.why-grid{
+grid-template-columns:1fr;
+}
+
+}
+</style>
+</head>
+
+<body>
+
+<header>
+
+<div class="container nav">
+
+<a href="/" class="logo">
+<span>K</span> LOCAL MODE
+</a>
+
+<a href="/" class="home-link">
+← Home
+</a>
+
+</div>
+
+</header>
+
+
+<main>
+
+<section class="hero">
+
+<div class="container">
+
+<div class="eyebrow">
+TRENDING IN KOREA
+</div>
+
+<h1>
+What's Hot in Korea Right Now
+</h1>
+
+<p>
+Places, food, K-pop, pop-ups, shopping,
+slang and the things people in Korea are actually talking about now.
+</p>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="eyebrow">
+EXPLORE TRENDS
+</div>
+
+<h2>
+Korea changes fast.
+</h2>
+
+<p class="section-copy">
+This section is for current trends, not timeless travel guides.
+Every trend page should make its update date clear
+so visitors know whether the information is still useful.
+</p>
+
+
+<div class="category-grid">
+
+
+<div class="category-card">
+
+<div class="icon">📍</div>
+
+<h3>Hot Places</h3>
+
+<p>
+Neighborhoods, cafés, restaurants,
+photo spots and places currently getting attention in Korea.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">🍜</div>
+
+<h3>Viral Food</h3>
+
+<p>
+Convenience-store food, desserts,
+restaurant trends and things currently spreading on Korean social media.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">🎤</div>
+
+<h3>K-pop Now</h3>
+
+<p>
+Current pop-ups, fan events,
+album releases and visitor-relevant K-pop activity.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">🔥</div>
+
+<h3>Pop-ups</h3>
+
+<p>
+Temporary stores and events
+in Seongsu, The Hyundai Seoul, Myeongdong and other areas.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">💬</div>
+
+<h3>Trending Korean</h3>
+
+<p>
+Current slang, memes,
+online expressions and phrases Koreans are actually using now.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+<div class="category-card">
+
+<div class="icon">🛍️</div>
+
+<h3>What's Selling</h3>
+
+<p>
+Beauty products, fashion,
+character goods and items currently popular in Korea.
+</p>
+
+<span class="status">
+COMING SOON
+</span>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section class="now">
+
+<div class="container">
+
+<div class="eyebrow">
+CONTENT FORMAT
+</div>
+
+<h2>
+What we'll publish here.
+</h2>
+
+<p class="section-copy">
+Trending content will be built differently from
+our evergreen travel guides.
+</p>
+
+
+<div class="trend-list">
+
+
+<div class="trend-item">
+
+<strong>
+What's Trending in Korea This Week
+</strong>
+
+<span>
+A short rotating summary of current places,
+products, food and culture.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="trend-item">
+
+<strong>
+What's Trending in Seongsu Right Now
+</strong>
+
+<span>
+Pop-ups, cafés, stores
+and current reasons visitors are going to Seongsu.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="trend-item">
+
+<strong>
+K-pop Pop-ups Open in Seoul This Month
+</strong>
+
+<span>
+A temporary guide that needs frequent checking and updates.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="trend-item">
+
+<strong>
+Viral Korean Convenience Store Food
+</strong>
+
+<span>
+Products currently getting attention
+rather than a permanent “best snacks” list.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+<div class="trend-item">
+
+<strong>
+Korean Slang People Are Using Right Now
+</strong>
+
+<span>
+New and currently relevant expressions,
+separate from evergreen Korean-language guides.
+</span>
+
+<div class="next">
+PLANNED
+</div>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="eyebrow">
+HOW WE HANDLE TRENDS
+</div>
+
+<h2>
+Freshness matters.
+</h2>
+
+<p class="section-copy">
+A trending page can become misleading much faster
+than a subway or palace guide.
+</p>
+
+
+<div class="why-grid">
+
+
+<div class="why-item">
+
+<div class="why-number">
+01
+</div>
+
+<h3>Show the update date</h3>
+
+<p>
+Readers should immediately know
+when we last checked the information.
+</p>
+
+</div>
+
+
+<div class="why-item">
+
+<div class="why-number">
+02
+</div>
+
+<h3>Remove dead trends</h3>
+
+<p>
+Expired pop-ups and old viral products
+shouldn't pretend to be current.
+</p>
+
+</div>
+
+
+<div class="why-item">
+
+<div class="why-number">
+03
+</div>
+
+<h3>Connect trends to evergreen guides</h3>
+
+<p>
+A trending Seongsu pop-up can link
+to a permanent Seongsu travel guide later.
+</p>
+
+</div>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<section>
+
+<div class="container">
+
+<div class="local-note">
+
+<strong>K Local Mode Trending Rule</strong>
+
+<br><br>
+
+This section should answer:
+
+<br><br>
+
+<strong>
+What's actually popular now?<br>
+Is it still open?<br>
+Is the hype mostly online or are Koreans actually going?<br>
+Where is it?<br>
+Do I need a reservation?<br>
+How long will it be available?<br>
+Is it worth adding to a short Korea trip?
+</strong>
+
+<br><br>
+
+We won't keep an old trend page labeled
+“right now” after the trend is gone.
+
+</div>
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer>
+
+<div class="container">
+© 2026 K Local Mode · Travel Korea Like a Local
+</div>
+
+</footer>
+
+</body>
+</html>
