@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Korea Transportation Guide | Subway, Airport, T-money & Taxi</title>
+
+  <meta name="description"
+        content="Learn how to get around Korea with practical guides to Incheon Airport, Seoul subway, buses, taxis, KTX, T-money, navigation apps and more.">
+
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://klocalmode.com/transport/">
+
+  <meta property="og:title"
+        content="Korea Transportation Guide | K Local Mode">
+
+  <meta property="og:description"
+        content="Practical transportation guides for traveling Korea: airports, subway, buses, taxis, KTX, T-money and navigation apps.">
+
+  <meta property="og:url"
+        content="https://klocalmode.com/transport/">
+
+  <meta property="og:type" content="website">
+
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Inter, -apple-system, BlinkMacSystemFont, "Segoe UI",
+                   Roboto, Helvetica, Arial, sans-serif;
+      background: #f8faf8;
+      color: #18201d;
+      line-height: 1.65;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: min(1100px, calc(100% - 40px));
+      margin: 0 auto;
+    }
+
+    header {
+      background: white;
+      border-bottom: 1px solid #e1e7e3;
+    }
+
+    .nav {
+      min-height: 70px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+
+    .logo {
+      font-weight: 900;
+      font-size: 1.25rem;
+      letter-spacing: -0.04em;
+    }
+
+    .logo span {
+      color: #117a42;
+    }
+
+    .home-link {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: #55615a;
+    }
+
+    .hero {
+      padding: 80px 0 65px;
+      background:
+        radial-gradient(circle at 85% 20%, rgba(19,166,83,0.12), transparent 30%),
+        linear-gradient(180deg, #ffffff 0%, #f5faf6 100%);
+    }
+
+    .eyebrow {
+      color: #117a42;
+      font-size: 0.78rem;
+      font-weight: 900;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      max-width: 850px;
+      font-size: clamp(2.7rem, 6vw, 5rem);
+      line-height: 1.02;
+      letter-spacing: -0.055em;
+      margin-bottom: 22px;
+    }
+
+    .hero p {
+      max-width: 730px;
+      color: #5e6b63;
+      font-size: 1.08rem;
+    }
+
+    section {
+      padding: 70px 0;
+    }
+
+    h2 {
+      font-size: clamp(1.8rem, 4vw, 2.7rem);
+      letter-spacing: -0.04em;
+      line-height: 1.1;
+      margin-bottom: 12px;
+    }
+
+    .section-copy {
+      color: #68736c;
+      max-width: 720px;
+      margin-bottom: 30px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 16px;
+    }
+
+    .card {
+      display: block;
+      background: white;
+      border: 1px solid #dfe6e1;
+      border-radius: 18px;
+      padding: 25px;
+      min-height: 190px;
+      transition: 0.2s;
+    }
+
+    .card:hover {
+      transform: translateY(-3px);
+      border-color: #a8d3b7;
+      box-shadow: 0 15px 35px rgba(25,55,36,0.07);
+    }
+
+    .icon {
+      font-size: 1.7rem;
+      margin-bottom: 18px;
+    }
+
+    .card h3 {
+      margin-bottom: 7px;
+      font-size: 1.15rem;
+    }
+
+    .card p {
+      color: #68736c;
+      font-size: 0.92rem;
+    }
+
+    .soon {
+      display: inline-block;
+      margin-top: 16px;
+      color: #117a42;
+      font-size: 0.82rem;
+      font-weight: 800;
+    }
+
+    .start {
+      background: #17221c;
+      color: white;
+    }
+
+    .start .eyebrow {
+      color: #72d89a;
+    }
+
+    .start .section-copy {
+      color: #b7c2bb;
+    }
+
+    .priority-list {
+      display: grid;
+      gap: 10px;
+    }
+
+    .priority-item {
+      background: rgba(255,255,255,0.07);
+      border: 1px solid rgba(255,255,255,0.11);
+      border-radius: 13px;
+      padding: 17px 19px;
+    }
+
+    .priority-item strong {
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    .priority-item span {
+      color: #acb9b1;
+      font-size: 0.87rem;
+    }
+
+    .local-note {
+      background: #edf8f1;
+      border: 1px solid #d1e7d9;
+      border-radius: 18px;
+      padding: 28px;
+    }
+
+    .local-note strong {
+      color: #117a42;
+    }
+
+    footer {
+      padding: 40px 0;
+      background: white;
+      border-top: 1px solid #e1e7e3;
+      color: #737f77;
+      font-size: 0.85rem;
+    }
+
+    @media (max-width: 700px) {
+      .container {
+        width: min(100% - 28px, 1100px);
+      }
+
+      .hero {
+        padding: 60px 0 50px;
+      }
+
+      .grid {
+        grid-template-columns: 1fr;
+      }
+
+      section {
+        padding: 55px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+<header>
+  <div class="container nav">
+    <a href="/" class="logo">
+      <span>K</span> LOCAL MODE
+    </a>
+
+    <a href="/" class="home-link">
+      ← Home
+    </a>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+
+    <div class="eyebrow">
+      GET AROUND KOREA
+    </div>
+
+    <h1>
+      Korea Transportation Guide
+    </h1>
+
+    <p>
+      Airports, subway, buses, taxis, trains and transportation cards.
+      Practical guides for getting around Korea without wasting time
+      figuring everything out after you arrive.
+    </p>
+
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+
+    <div class="eyebrow">
+      TRANSPORTATION
+    </div>
+
+    <h2>
+      Choose what you need help with.
+    </h2>
+
+    <p class="section-copy">
+      Start with your airport transfer or learn how Korea's public
+      transportation system works before your trip.
+    </p>
+
+    <div class="grid">
+
+      <div class="card">
+        <div class="icon">✈️</div>
+        <h3>Incheon Airport</h3>
+        <p>
+          How to get from Incheon Airport to Seoul, Myeongdong,
+          Hongdae, Gangnam and other popular areas.
+        </p>
+        <span class="soon">Guides coming next →</span>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚇</div>
+        <h3>Seoul Subway</h3>
+        <p>
+          Tickets, station exits, transfers, subway etiquette
+          and practical tips for first-time visitors.
+        </p>
+        <span class="soon">Guide coming soon →</span>
+      </div>
+
+      <div class="card">
+        <div class="icon">💳</div>
+        <h3>T-money & Transportation Cards</h3>
+        <p>
+          Where to buy a T-money card, how to recharge it,
+          where it works and alternatives for tourists.
+        </p>
+        <span class="soon">Guides coming soon →</span>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚕</div>
+        <h3>Taxi</h3>
+        <p>
+          How Korean taxis work, Kakao T, payment,
+          airport taxis and what foreign visitors should know.
+        </p>
+        <span class="soon">Guides coming soon →</span>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚌</div>
+        <h3>Bus</h3>
+        <p>
+          Seoul buses, airport buses, boarding,
+          transfers and how to know when to get off.
+        </p>
+        <span class="soon">Guides coming soon →</span>
+      </div>
+
+      <div class="card">
+        <div class="icon">🚄</div>
+        <h3>KTX & Trains</h3>
+        <p>
+          Travel between Seoul, Busan, Gyeongju and other cities
+          using Korea's train network.
+        </p>
+        <span class="soon">Guides coming soon →</span>
+      </div>
+
+      <div class="card">
+        <div class="icon">🗺️</div>
+        <h3>Navigation Apps</h3>
+        <p>
+          Naver Map, KakaoMap and the apps that are actually useful
+          when traveling around Korea.
+        </p>
+        <span class="soon">Guides coming soon →</span>
+      </div>
+
+      <div class="card">
+        <div class="icon">🌙</div>
+        <h3>Late-Night Transportation</h3>
+        <p>
+          What to do after the subway stops running,
+          including taxis, night buses and airport options.
+        </p>
+        <span class="soon">Guides coming soon →</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section class="start">
+  <div class="container">
+
+    <div class="eyebrow">
+      FIRST-TIMER PRIORITY
+    </div>
+
+    <h2>
+      Start with these guides.
+    </h2>
+
+    <p class="section-copy">
+      These are the transportation questions we recommend
+      understanding before your first trip to Korea.
+    </p>
+
+    <div class="priority-list">
+
+      <div class="priority-item">
+        <strong>1. Incheon Airport to Seoul</strong>
+        <span>AREX, airport bus, taxi and which option makes sense.</span>
+      </div>
+
+      <div class="priority-item">
+        <strong>2. Incheon Airport to Myeongdong</strong>
+        <span>Compare transportation options for one of Seoul's most popular visitor areas.</span>
+      </div>
+
+      <div class="priority-item">
+        <strong>3. How to Use the Seoul Subway</strong>
+        <span>Stations, exits, transfers and getting around without confusion.</span>
+      </div>
+
+      <div class="priority-item">
+        <strong>4. T-money Card Guide</strong>
+        <span>Buying, charging and using Korea's most useful transportation card.</span>
+      </div>
+
+      <div class="priority-item">
+        <strong>5. Naver Map Guide for Foreigners</strong>
+        <span>Why it matters in Korea and how to use it for transportation.</span>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section>
+  <div class="container">
+
+    <div class="local-note">
+      <strong>Local Mode Tip</strong><br><br>
+
+      Transportation in Korea is usually easy once you know
+      which card, app, station and exit to use.
+      K Local Mode focuses on those small details that can make
+      a big difference when you're actually standing in Korea.
+    </div>
+
+  </div>
+</section>
+
+</main>
+
+
+<footer>
+  <div class="container">
+    © 2026 K Local Mode · Travel Korea Like a Local
+  </div>
+</footer>
+
+</body>
+</html>
